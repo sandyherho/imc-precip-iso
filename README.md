@@ -9,7 +9,7 @@
 ![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=Overleaf&style=for-the-badge&logoColor=white)
 
 
-This GitHub repository contains code used for **mc-water-iso** created by [Sandy H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [Dasapta E. Irawan](https://scholar.google.com/citations?user=Myvc78MAAAAJ&hl=en), [Faiz R. Fajary](https://scholar.google.com/citations?user=cTqtdTIAAAAJ&hl=en), [Rusmawan Suwarman](https://scholar.google.com/citations?user=NfMfR8LMVz8C&hl=en) and [Siti N. Kaban](https://scholar.google.com/citations?user=Jc0NPJsAAAAJ&hl=en) at the [Applied Geology Research Group](https://itb.ac.id/applied-geology-research-group), Bandung Institute of Technology (ITB), Indonesia.
+This GitHub repository contains code used for **mc-water-iso** created by [R. Suwarman](https://scholar.google.com/citations?user=NfMfR8LMVz8C&hl=en), [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [H. A. Belgaman](https://scholar.google.co.id/citations?user=BnuFrE8AAAAJ&hl=en), [K. Ichiyanagi](https://researchmap.jp/kimpei/research_experience/16460562?lang=en), [M. Tanoue](https://scholar.google.co.id/citations?user=0IdG2G4AAAAJ&hl=en), and [D. E. Irawan](https://scholar.google.com/citations?user=Myvc78MAAAAJ&hl=en).
 
 ### License
 This code was released under the [GPL-3.0 License](https://github.com/sandyherho/IndraAnnDeepEval/blob/main/LICENSE.txt).
