@@ -20,8 +20,8 @@ plt.rcParams['figure.dpi'] = 1200
 warnings.filterwarnings("ignore")
 
 # read raw sta data
-df = pd.read_excel("./raw_data/st_list.xlsx", sheet_name="Lengkap",
-                  index_col="No")
+df = pd.read_excel("../raw_data/st_list.xlsx", sheet_name="Lengkap",
+	index_col="No")
 
 # renaming
 df = df.rename(columns={df.columns[0]:"station_name",
@@ -41,4 +41,4 @@ fig = pygmt.Figure()
 fig.basemap(region=[93, 143, -20, 20], projection="M15c", frame=True)
 fig.coast(land="black", water="skyblue")
 fig.plot(x=df["longitude"], y=df["latitude"], style="c0.3c", cmap="white", pen="black")
-fig.savefig("./figs/fig1.png")
+fig.savefig("../figs/fig1.png")
