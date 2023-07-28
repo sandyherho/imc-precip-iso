@@ -42,7 +42,7 @@ fig.savefig("../figs/fig2.png")
 
 print("Max. sta.: ", count_sta_data.idxmax()) # pos kemayoran
 print("# of max data points: ", count_sta_data.max()) # 47 
-print("Min. sta.: ", count_sta_data.idxmin()) # ranomeeto, makassar
+print("Min. sta.: ", count_sta_data.idxmin()) # ranomeeto, tambang
 print("# of max data points: ", count_sta_data.min()) # 2
 print(count_sta_data[count_sta_data >= (50 / 100 * o18.shape[0])].dropna()) # >= 50% : pos kemayoran(1), deli serdang (5), radin inten II (11)
 print("median nums: " + str(count_sta_data.median()) + "; or "+ str(count_sta_data.median() / 85 * 100) + "%.") # med: 22, or 25. 882% of total months
@@ -75,3 +75,24 @@ h2_std.index.name="station_number"
 print("Sta. max. std: " + str(h2_std.idxmax()) + "; Max std: " + str(h2_std.max())) # Tambang (57), 33.086, jum: 2
 print("Sta. min. std: " + str(h2_std.idxmin()) + "; Min std: " + str(h2_std.min())) # Sorong (54), 5.307, jum: 4
 h2_std.to_csv("../output_data/descriptive_stats/h2_std.csv")
+
+# boxplots
+fig, ax = plt.subplots(figsize=(20, 25));
+sns.boxplot(data=o18, orient="h", color="skyblue", ax=ax)
+ax.set_xlabel("$\delta^{18}$O [‰, VSMOW]", fontsize=30);
+ax.set_ylabel("Station number", fontsize=40);
+ax.tick_params(axis="x", which="major", labelsize=20, rotation=45)
+ax.tick_params(axis="x", which="minor", labelsize=20, rotation=45)
+ax.tick_params(axis="y", which="major", labelsize=20)
+ax.tick_params(axis="y", which="minor", labelsize=20)
+fig.savefig("../figs/fig3a.png")
+
+fig, ax = plt.subplots(figsize=(20, 25));
+sns.boxplot(data=h2, orient="h", color="red", ax=ax)
+ax.set_xlabel("$\delta^{2}$H [‰, VSMOW]", fontsize=30);
+ax.set_ylabel("Station number", fontsize=40);
+ax.tick_params(axis="x", which="major", labelsize=20, rotation=45)
+ax.tick_params(axis="x", which="minor", labelsize=20, rotation=45)
+ax.tick_params(axis="y", which="major", labelsize=20)
+ax.tick_params(axis="y", which="minor", labelsize=20)
+fig.savefig("../figs/fig3b.png")
