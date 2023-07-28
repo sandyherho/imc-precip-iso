@@ -55,16 +55,16 @@ date = pd.date_range(start='9/1/2010', end='10/1/2017', freq="M")
 
 
 i=1
-while i <= 62:
+while i<=62:
     frame = {"date":date, "precipitation":pr[i], "o18":o18[i], "h2":h2[i]}
     df_join = pd.DataFrame(frame).set_index("date")
     df_join["d_excess"] = d_excess(df_join["h2"], df_join["o18"])
     df_join = df_join.round(3)
     df_join = df_join.replace(np.nan, -999)
-    df_join.to_csv("../processed_data/sta_data/sta_"+str(i)+".csv")
+    df_join.to_csv("../output_data/sta_data/sta_"+str(i)+".csv")
     i+=1
 
-path = "../processed_data/sta_data/"
+path = "../output_data/sta_data/"
 df = pd.concat(map(pd.read_csv, glob.glob(path + "/*.csv")))
 
 df.to_csv(path+"all_sta.csv", index=False)

@@ -35,9 +35,10 @@ df["region"] = df["region"].str.replace("Kalimantan", "Borneo")
 # drop nan stations
 df = df.drop([60, 61, 62], axis=0).reset_index().drop("No", axis=1)
 df.index.name = "No."
+df.index = df.index + 1
 
 # save csv file
-df.to_csv("../processed_data/sta_list.csv")
+df.to_csv("../output_data/sta_list.csv")
 
 # plot map
 fig = pygmt.Figure()
