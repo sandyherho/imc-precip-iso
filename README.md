@@ -1,4 +1,4 @@
-# `mc-water-iso`: 
+# `mc-precip-iso`: Open stable isotope data of precipitation over the Maritime Continent 
 
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)

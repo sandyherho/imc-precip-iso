@@ -9,7 +9,6 @@ SHSH <sandy.herho@email.ucr.edu>
 
 # import libs & settings
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import pygmt
 import warnings
@@ -33,8 +32,12 @@ df = df.rename(columns={df.columns[0]:"station_name",
 df["region"] = df["region"].str.replace("Jawa","Java")
 df["region"] = df["region"].str.replace("Kalimantan", "Borneo")
 
+# drop nan stations
+df = df.drop([60, 61, 62], axis=0).reset_index().drop("No", axis=1)
+df.index.name = "No."
+
 # save csv file
-df.to_csv("./processed_data/sta_list.csv")
+df.to_csv("../processed_data/sta_list.csv")
 
 # plot map
 fig = pygmt.Figure()
