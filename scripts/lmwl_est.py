@@ -40,7 +40,7 @@ print("slope freq: ", lin_reg_lmwl.coef_)  # slope
 h2_predicted = lin_reg_lmwl.predict(o18)
 
 ## Bayes
-prior = pd.read_csv("../raw_data/lmwl_putman19.csv")[["m", "b", "koppen"]]  # 29 stations
+prior = pd.read_csv("../raw_data/lmwl_putmanEtAl19.csv")[["m", "b", "koppen"]]  # 29 stations
 prior = prior[prior["koppen"] == "Af"]
 
 mean_slope_prior = prior["m"].mean()  # 8.119
