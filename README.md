@@ -9,7 +9,7 @@
 ![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=Overleaf&style=for-the-badge&logoColor=white)
 
 
-This GitHub repository contains observational data on the traditional monthly isotopic compositions of the precipitation ($\delta^{2}$H and $\delta^{18}$O) over the Maritime Continent, collected from 62 stations throughout Indonesia, along with the Python code used to process them. The data collection process was performed from September 2010 to September 2017 at the following stations:
+This GitHub repository contains observational data on the traditional monthly isotopic compositions of the precipitation ($\delta^{2}$ H and $\delta^{18}$ O) over the Maritime Continent, collected from 62 stations throughout Indonesia, along with the Python code used to process them. The data collection process was performed from September 2010 to September 2017 at the following stations:
 
 
 
