@@ -40,6 +40,7 @@ We run the code under the [Python 3](https://www.python.org/) computing environm
 - [pandas](https://pandas.pydata.org/)
 - [pygmt](https://www.pygmt.org/)
 - [pymc3](https://www.pymc.io/projects/docs/en/v3/index.html)
+- [scikit-learn](https://scikit-learn.org/)
 - [seaborn](https://seaborn.pydata.org/)
 
 ### Acknowledgements
