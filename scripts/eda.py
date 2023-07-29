@@ -14,9 +14,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
 
+plt.rcParams['figure.dpi'] = 500
 plt.style.use("fivethirtyeight")
 plt.rcParams['figure.figsize'] = [20, 10]
-plt.rcParams['figure.dpi'] = 800
 warnings.filterwarnings("ignore")
 
 # open data
@@ -79,8 +79,8 @@ h2_std.to_csv("../output_data/descriptive_stats/h2_std.csv")
 # boxplots
 fig, ax = plt.subplots(figsize=(20, 25));
 sns.boxplot(data=o18, orient="h", color="skyblue", ax=ax)
-ax.set_xlabel("$\delta^{18}$O [‰, VSMOW]", fontsize=30);
-ax.set_ylabel("Station number", fontsize=40);
+ax.set_xlabel("$\delta^{18}$O [‰, VSMOW]", fontsize=50);
+ax.set_ylabel("Station number", fontsize=50);
 ax.tick_params(axis="x", which="major", labelsize=20, rotation=45)
 ax.tick_params(axis="x", which="minor", labelsize=20, rotation=45)
 ax.tick_params(axis="y", which="major", labelsize=20)
@@ -89,8 +89,8 @@ fig.savefig("../figs/fig3a.png")
 
 fig, ax = plt.subplots(figsize=(20, 25));
 sns.boxplot(data=h2, orient="h", color="red", ax=ax)
-ax.set_xlabel("$\delta^{2}$H [‰, VSMOW]", fontsize=30);
-ax.set_ylabel("Station number", fontsize=40);
+ax.set_xlabel("$\delta^{2}$H [‰, VSMOW]", fontsize=50);
+ax.set_ylabel("Station number", fontsize=50);
 ax.tick_params(axis="x", which="major", labelsize=20, rotation=45)
 ax.tick_params(axis="x", which="minor", labelsize=20, rotation=45)
 ax.tick_params(axis="y", which="major", labelsize=20)

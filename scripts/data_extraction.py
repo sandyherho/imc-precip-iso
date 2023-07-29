@@ -30,22 +30,12 @@ def first_iso_cleaning(sheet_name):
 o18 = first_iso_cleaning("d18(OBS)")
 h2 = first_iso_cleaning("dD(OBS)_2")
 
-pr = pd.read_excel("../raw_data/isotop monthly.xlsx", sheet_name="gsprec")
-pr = pr.iloc[8:93,:] # Sep 10 - Sep 17
-pr = pr.drop([pr.columns[0], pr.columns[1], pr.columns[2],
-              pr.columns[3], pr.columns[4], pr.columns[5], 
-              pr.columns[6]], axis=1).reset_index(drop=True)
-pr = pr.iloc[:,:65]
-pr = pr.drop([60, 61, 62], axis=1)
-pr = pr.rename(columns={63:60, 64:61, 65:62})
-
 def d_excess(h2, o18):
     return (h2 - 8*o18)
 
 # save raw clean data
 o18.to_csv("../raw_data/raw_clean/o18_clean.csv", index=False)
 h2.to_csv("../raw_data/raw_clean/h2_clean.csv", index=False)
-pr.to_csv("../raw_data/raw_clean/pr_clean.csv", index=False)
 
 d_ex = d_excess(h2, o18)
 d_ex.to_csv("../raw_data/raw_clean/d_excess_clean.csv", index=False)
@@ -56,7 +46,7 @@ date = pd.date_range(start='9/1/2010', end='10/1/2017', freq="M")
 
 i=1
 while i<=62:
-    frame = {"date":date, "precipitation":pr[i], "o18":o18[i], "h2":h2[i]}
+    frame = {"date":date, "o18":o18[i], "h2":h2[i]}
     df_join = pd.DataFrame(frame).set_index("date")
     df_join["d_excess"] = d_excess(df_join["h2"], df_join["o18"])
     df_join = df_join.round(3)
@@ -66,5 +56,5 @@ while i<=62:
 
 path = "../output_data/sta_data/"
 df = pd.concat(map(pd.read_csv, glob.glob(path + "/*.csv")))
-
+df = df.drop([df.columns[0], df.columns[-1]], axis=1)
 df.to_csv(path+"all_sta.csv", index=False)
