@@ -13,8 +13,7 @@
 
 This GitHub repository contains observational data on the traditional monthly isotopic compositions of the precipitation ($\delta^{2}$ H and $\delta^{18}$ O) over the Maritime Continent, collected from [62 stations](https://github.com/sandyherho/mc-precip-iso/blob/main/output_data/sta_list.csv) throughout Indonesia, along with the Python code used to process them. The data collection process was performed from September 2010 to September 2017.
 
- We used the Picarro L2120-i water isotope analyzer with calibration using three water isotope standards, Aqua Standard<sup>&reg;</sup>. DOW, SLW2, and ICE2 at [the Hydrology Laboratory of Kumamoto University, Japan](https://www.fast.kumamoto-u.ac.jp/gsst-en/department/masters_c/science/earth_and_environmental_sciences/). The cleaning process and simple data analysis were conducted at [the Weather and Climate Prediction Laboratory (WCPL) of Bandung Institute of Technology (ITB), Indonesia](https://www.meteo.itb.ac.id/en/lab-of-meteorological-analysis/). The following are the individuals involved in this project: [R. Suwarman](https://scholar.google.com/citations?user=NfMfR8LMVz8C&hl=en), [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [H. A. Belgaman](https://scholar.google.co.id/citations?user=BnuFrE8AAAAJ&hl=en), [D. E. Irawan](https://scholar.google.com/citations?user=Myvc78MAAAAJ&hl=en), [K. Ichiyanagi](https://researchmap.jp/kimpei/research_experience/16460562?lang=en), and [M. Tanoue](https://scholar.google.co.id/citations?user=0IdG2G4AAAAJ&hl=en).
-
+ We used the Picarro L2120-i water isotope analyzer with calibration using three water isotope standards, Aqua Standard<sup>&reg;</sup>. DOW, SLW2, and ICE2 at [the Hydrology Laboratory of Kumamoto University, Japan](https://www.fast.kumamoto-u.ac.jp/gsst-en/department/masters_c/science/earth_and_environmental_sciences/). The cleaning process and simple data analysis were conducted at [the Weather and Climate Prediction Laboratory (WCPL) of Bandung Institute of Technology (ITB), Indonesia](https://www.meteo.itb.ac.id/en/lab-of-meteorological-analysis/). The following are the individuals involved in this project: [R. Suwarman](https://scholar.google.com/citations?user=NfMfR8LMVz8C&hl=en), [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [H. A. Belgaman](https://scholar.google.co.id/citations?user=BnuFrE8AAAAJ&hl=en), [D. E. Irawan](https://scholar.google.com/citations?user=Myvc78MAAAAJ&hl=en), [K. Ichiyanagi](https://researchmap.jp/kimpei/research_experience/16460562?lang=en), [I. M. Yosa](https://www.linkedin.com/in/imam-maulana-yosa-5123a1195/?originalSubdomain=id), [A. I. D. Utami](), and [E. Aldrian](https://scholar.google.com/citations?user=K_wSwG8AAAAJ&hl=en)
 ### License
 These data and code were released under the [GPL-3.0 License](https://github.com/sandyherho/mc-precip-iso/blob/main/LICENSE.txt).
 
@@ -24,7 +23,7 @@ If you find these data useful, please  consider citing our paper:
 
 `
 @article{SuwarmanEtAl23,
-         author={Suwarman, R. and  Herho, S. H. S. and Belgaman, H. A. and Irawan, D. E. and Ichiyanagi, K. and Tanoue M.},
+         author={Suwarman, R. and  Herho, S. H. S. and Belgaman, H. A. and Irawan, D. E. and Ichiyanagi, K. and Yosa, I.M. and Utami, A. I. D and Aldrian, E.},
          title={},
          journal={xxxxx},
          year={2023},
@@ -48,4 +47,4 @@ We produced the data under the [Python 3](https://www.python.org/) computing env
 - [seaborn](https://seaborn.pydata.org/)
 
 ### Acknowledgements
-We are grateful to Michael N. Evans (UMD) for discussing fractionation on precipitation isotopes in the tropics, which was useful in producing these data. This study was supported by ITB Research, Community Service and Innovation Program (P3MI-ITB), Japan Society for the Promotion of Science (JSPS) KAKENHI (#24510256 and #16H05619), and the National Science Foundation (NSF) (#AGS1903626).
+We are grateful to Michael N. Evans (UMD) for discussing fractionation on precipitation isotopes in the tropics, which was useful in producing these data. This study was supported by ITB Research, Community Service and Innovation Program (PPMI-ITB), Japan Society for the Promotion of Science (JSPS) KAKENHI (#24510256 and #16H05619), and the National Science Foundation (NSF) (#AGS1903626).
