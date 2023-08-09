@@ -21,7 +21,6 @@ warnings.filterwarnings("ignore")
 
 # open data
 date = pd.date_range(start='9/1/2010', end='10/1/2017', freq="M")
-pr = pd.read_csv("../raw_data/raw_clean/pr_clean.csv")
 o18 = pd.read_csv("../raw_data/raw_clean/o18_clean.csv")
 h2 = pd.read_csv("../raw_data/raw_clean/h2_clean.csv")
 d_ex = pd.read_csv("../raw_data/raw_clean/d_excess_clean.csv")
@@ -53,12 +52,14 @@ count_sta_data.to_csv("../output_data/descriptive_stats/number_of_data_points.cs
 ## o18
 o18_med = pd.DataFrame(o18.median(axis=0).rename("median"))
 o18_med.index.name="station_number"
+o18_med = o18_med.apply(lambda x:round(x, 3))
 print("Sta. max. med: " + str(o18_med.idxmax()) + "; Max med: " + str(o18_med.max())) # El Tari (24), -0.062, jum: 3 
 print("Sta. min. med: " + str(o18_med.idxmin()) + "; Min med: " + str(o18_med.min())) # Malikulsaleh (53), -9.539, jum: 3
 o18_med.to_csv("../output_data/descriptive_stats/o18_median.csv")
 
 o18_std = pd.DataFrame(o18.std(axis=0).rename("std"))
 o18_std.index.name="station_number"
+o18_std = o18_std.apply(lambda x:round(x, 3))
 print("Sta. max. std: " + str(o18_std.idxmax()) + "; Max std: " + str(o18_std.max())) # Pesawaran (41), -0.062, jum: 8
 print("Sta. min. std: " + str(o18_std.idxmin()) + "; Min std: " + str(o18_std.min())) # Ranomeeto (58), -9.539, jum: 2
 o18_std.to_csv("../output_data/descriptive_stats/o18_std.csv")
@@ -66,12 +67,14 @@ o18_std.to_csv("../output_data/descriptive_stats/o18_std.csv")
 ## h2
 h2_med = pd.DataFrame(h2.median(axis=0).rename("median"))
 h2_med.index.name="station_number"
+h2_med = h2_med.apply(lambda x:round(x, 3))
 print("Sta. max. med: " + str(h2_med.idxmax()) + "; Max med: " + str(h2_med.max())) # El Tari (24), 1.597, jum: 3 
 print("Sta. min. med: " + str(h2_med.idxmin()) + "; Min med: " + str(h2_med.min())) # Malikulsaleh (53), -9.539, jum: 3
 h2_med.to_csv("../output_data/descriptive_stats/h2_median.csv")
 
 h2_std = pd.DataFrame(h2.std(axis=0).rename("std"))
 h2_std.index.name="station_number"
+h2_std = h2_std.apply(lambda x:round(x, 3))
 print("Sta. max. std: " + str(h2_std.idxmax()) + "; Max std: " + str(h2_std.max())) # Tambang (57), 33.086, jum: 2
 print("Sta. min. std: " + str(h2_std.idxmin()) + "; Min std: " + str(h2_std.min())) # Sorong (54), 5.307, jum: 4
 h2_std.to_csv("../output_data/descriptive_stats/h2_std.csv")
