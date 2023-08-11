@@ -47,4 +47,4 @@ We produced the data under the [Python 3](https://www.python.org/) computing env
 - [seaborn](https://seaborn.pydata.org/)
 
 ### Acknowledgements
-We are grateful to Michael N. Evans (UMD) for discussing fractionation on precipitation isotopes in the tropics, which was useful in producing these data. This study was supported by ITB Research, Community Service and Innovation Program (PPMI-ITB), Japan Society for the Promotion of Science (JSPS) KAKENHI (#24510256 and #16H05619), and the National Science Foundation (NSF) (#AGS1903626).
+We are grateful to Michael N. Evans (UMD) for discussing fractionation on precipitation isotopes in the tropics, which was useful in producing these data. This study was supported by ITB Research, Community Service and Innovation Program (PPMI-ITB) and Japan Society for the Promotion of Science (JSPS) KAKENHI (#24510256 and #16H05619).

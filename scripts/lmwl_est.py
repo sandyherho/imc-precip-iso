@@ -116,7 +116,7 @@ plt.tick_params(axis="y", which="minor", labelsize=12)
 plt.tight_layout()
 plt.savefig("../figs/fig4b.png")
 
-intercept = trace_lmwl["intercept"].mean() # mean intercepr
+intercept = trace_lmwl["intercept"].mean() # mean intercept
 slope = trace_lmwl["slope"].mean() # mean slope
 print("LMWL intercept mean: ", round(intercept, 3)) # 3.506
 print("LMWL slope mean: ", round(slope, 3)) # 7.298
