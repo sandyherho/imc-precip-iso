@@ -126,6 +126,7 @@ slope_std = trace_lmwl["slope"].std() # std slope
 print("LMWL intercept std: ", round(intercept_std, 3)) # 1.732
 print("LMWL slope std: ", round(slope_std, 3)) # 0.267
 
+"""
 plt.figure()
 for i in range(0,10000):
     plt.plot(o18, trace_lmwl["intercept"][i] + trace_lmwl["slope"][i]*o18,
@@ -142,3 +143,4 @@ plt.tick_params(axis="x", which="minor", labelsize=12)
 plt.tick_params(axis="y", which="major", labelsize=12)
 plt.tick_params(axis="y", which="minor", labelsize=12)
 plt.savefig("../figs/fig5.png")
+"""
